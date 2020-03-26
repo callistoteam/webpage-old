@@ -4,7 +4,7 @@ import Landing from "../components/Landing";
 
 const Main = () => {
   return (
-    <div>
+    <div className="home">
       <Landing />
     </div>
   );
