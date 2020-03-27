@@ -9,9 +9,10 @@ import Footer from './components/Footer'
 import Main from './pages/Main'
 import Tos from './pages/Tos'
 import Privacy from './pages/Privacy'
+import License from './pages/License'
 import Wonderbot from './pages/Wonderbot'
 import Team from './pages/Team'
-import License from './pages/License'
+import Join from './pages/JoinTeam'
 
 const App = props => {
   return (
@@ -21,6 +22,7 @@ const App = props => {
         
         <Switch>
         <Route path='/team/about'> <Team/> </Route>
+        <Route path='/team/join'> <Join/> </Route>
         <div className='ui container'>
           <Route exact path='/'>
             <Main/>
