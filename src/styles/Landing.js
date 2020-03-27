@@ -6,5 +6,5 @@ export default css({
     alignItems: 'center',
     minHeight: '80vh',
     justifyCotent: 'center',
-    paddingTop: '80px !important'
+    paddingTop: '80px !important'   
 })

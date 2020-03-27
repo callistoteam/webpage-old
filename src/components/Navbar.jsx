@@ -11,19 +11,18 @@ const Navigation = props => {
     <div>
     <div {...styles.Menu}>
     <div className="ui container">
-    <h1 class="ui inverted header">Cover</h1>
     <div className="ui secondary pointing menu" style={{fontSize: '15px', border: 'transparent'}}>
       <a href="/" className="active item">
-        Home
+        홈
       </a>
       <div className="right menu">
       <div className="ui simple dropdown item" {...styles.NoMobile}>
-        소개
+        팀
     <i className="dropdown icon"></i>
     <div className="menu" {...styles.Dropdown}>
-      <div className="item">팀</div>
-      <div className="item">팀원</div>
-      <div className="item">채용</div>
+      <a href="/team/about" className="item">소개</a>
+      <a href="/team/members" className="item">팀원</a>
+      <a href="/team/join" className="item">채용</a>
     </div>
   </div>
       <a className="item" {...styles.NoMobile}>

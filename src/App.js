@@ -10,6 +10,7 @@ import Main from './pages/Main'
 import Tos from './pages/Tos'
 import Privacy from './pages/Privacy'
 import Wonderbot from './pages/Wonderbot'
+import Team from './pages/Team'
 
 const App = props => {
   return (
@@ -18,15 +19,18 @@ const App = props => {
         <br/>
         
         <Switch>
-        <Route path='/projects/wonderbot'> <Wonderbot/> </Route>
+        <Route path='/team/about'> <Team/> </Route>
         <div className='ui container'>
           <Route exact path='/'>
             <Main/>
           </Route>
           <Route path='/tos'> <Tos/> </Route>
           <Route path='/privacy'> <Privacy/> </Route>
-          </div>
+          {/*About*/}
           {/*Projects*/}
+          <Route path='/projects/wonderbot'> <Wonderbot/> </Route>
+          </div>
+
           </Switch>
 
           <Footer/>
