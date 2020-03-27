@@ -11,6 +11,7 @@ import Tos from './pages/Tos'
 import Privacy from './pages/Privacy'
 import Wonderbot from './pages/Wonderbot'
 import Team from './pages/Team'
+import License from './pages/License'
 
 const App = props => {
   return (
@@ -26,6 +27,7 @@ const App = props => {
           </Route>
           <Route path='/tos'> <Tos/> </Route>
           <Route path='/privacy'> <Privacy/> </Route>
+          <Route path='/license'> <License/> </Route>
           {/*About*/}
           {/*Projects*/}
           <Route path='/projects/wonderbot'> <Wonderbot/> </Route>
