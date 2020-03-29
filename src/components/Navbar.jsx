@@ -16,6 +16,9 @@ const Navigation = props => {
         홈
       </a>
       <div className="right menu">
+      <a className="item" onClick={open} {...styles.OnlyMobile}>
+        { opened ? <i className="icon close"/> : <i className="icon bars"/>}
+      </a>
       <div className="ui simple dropdown item" {...styles.NoMobile}>
         팀
     <i className="dropdown icon"></i>
@@ -28,9 +31,7 @@ const Navigation = props => {
       <a className="item" {...styles.NoMobile}>
         Friends
       </a>
-      <a className="item" onClick={open} {...styles.OnlyMobile}>
-        { opened ? <i className="icon close"/> : <i className="icon bars"/>}
-      </a>
+      
       </div>
     </div>
     </div>

@@ -1,10 +1,62 @@
 {
-    "opened": [
+    "career": [
         {
             "id": "designer",
-            "name": "팀 디자이너",
-            "description": "팀의 로고, 포스터 등을 디자인 및 제작합니다."
-        }
-    ],
-    "closed": []
+            "name": "디자이너",
+            "open": true,
+            "description": "팀의 로고, 포스터, 아이템 등을 디자인 및 제작합니다. 팀에서 디자인 한 줌이 필요한 모든걸 디자인해요! 웹 디자인도 할 줄 안다면 최고에요! ",
+            "todo": "팀의 전반적인 프로젝트의 로고, 광고지, 아이템 등을 디자인합니다.",
+            "count": "1명",
+            "date": "~ 모집이 완료될 때까지",
+            "content": {
+                "must": ["유연한 디자인 능력"],
+                "good": ["UI/UX 디자인 가능(웹)"]
+            },
+            "form": { "포토폴리오 또는 디자인한 작품들": {"type": "textarea", "id": "projects", "placeholder": "복수 입력이 가능합니다. 되도록이면 URL들로 작성해주세요."}}
+
+        },
+        {
+            "name": "프론트엔드 개발자",
+            "id": "frontend",
+            "open": true,
+            "description": "웹 서비스의 프론트엔드를 제작합니다. 디자인감각도 필요하답니다. 예를 들어 이 사이트처럼! 깃허브는 다룰 줄 아시죠?",
+            "todo": "팀의 웹서비스의 모든 프론트엔드를 개발합니다. 저희 팀은 전반적으로 React를 이용합니다.",
+            "count": "상시 모집",
+            "date": "~ 인원 충당시까지",
+            "content": {
+                "must": ["React(JSX), HTML, CSS, JavaScript를 능숙하게 사용할 수 있음", "GitHub 사용 가능", "semantic-ui 를 사용할 수 있음"],
+                "good": ["Vue, Angular 등 다른 프레임워크도 다룰 수 있음", "반응형 디자인"]
+            },
+            "form": { "Github 닉네임": {"id": "github", "placeholder": "깃허브는 필수입니다."}, "포토폴리오 또는 프로젝트": {"type": "textarea", "id": "projects", "placeholder": "복수 입력이 가능합니다. 되도록이면 URL들로 작성해주세요."}, "가능한 언어 및 라이브러리": {"type": "textarea", "id": "ability", "placeholder": "자유롭게 작성해주세요"}}
+        },
+        {
+            "id": "shopdev",
+            "open": true,
+            "name": "상점 풀스택 개발자",
+            "description": "PG를 이용해 아이템 상점의 물건을 결제를 구현합니다. RESTFUL API부터 프론트엔드까지 개발할 줄 아셔야해요",
+            "todo": "팀의 프리미엄 기능을 구매하고 보상 지급 등 전반적인 시스템을 구성하고 관리합니다. PG를 이용한 백엔드부터 프론트엔드를 책임집니다.",
+            "count": "1명",
+            "date": "~ 모집이 완료될 때까지",
+            "content": {
+                "must": ["Html, CSS, Javascript, Jquery, Ajax, REST API 기술", "GitHub 사용 가능", "MySQL 프로그래밍 경험"],
+                "good": ["유사한 형태의 결제 모듈을 구현한적이 있으신 분", "React"]
+            },
+            "form": { "Github 닉네임": {"id": "github", "placeholder": "깃허브는 필수입니다."}, "포토폴리오 또는 프로젝트": {"type": "textarea", "id": "projects", "placeholder": "복수 입력이 가능합니다. 되도록이면 URL들로 작성해주세요."}, "가능한 언어 및 라이브러리": {"type": "textarea", "id": "ability", "placeholder": "자유롭게 작성해주세요"}}
+        },
+            {
+                "id": "discordbotdev",
+                "open": false,
+                "name": "디스코드봇 개발자",
+                "description": "디스코드봇을 개발하는 개발자입니다. 디스코드 API를 완벽하게 이해하고 능숙하게 사용할 수 있어야합니다.",
+                "todo": "디스코드봇을 제작합니다. 기본적인 코딩 지식뿐만 아니라 디스코드 API와 하나 이상의 라이브러리를 능숙하게 사용하셔야합니다",
+                "count": "1명",
+                "date": "종료됨",
+                "content": {
+                    "must": ["하나 이상의 디스코드 API 라이브러리를 다룰 수 있음", "디스코드봇 개발 경험"],
+                    "good": ["JS(Node.js) 사용", "Python 사용"]
+                },
+                "form": { "Github 닉네임": {"id": "github", "placeholder": "깃허브는 필수입니다."}, "포토폴리오 또는 프로젝트": {"type": "textarea", "id": "projects", "placeholder": "복수 입력이 가능합니다. 되도록이면 URL들로 작성해주세요."}, "가능한 언어 및 라이브러리": {"type": "textarea", "id": "ability", "placeholder": "자유롭게 작성해주세요"}}
+            }
+
+    ]
 }

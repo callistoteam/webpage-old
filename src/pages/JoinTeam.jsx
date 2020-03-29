@@ -17,7 +17,7 @@ const Wonderbot = () => {
                 <i className="icon small left quote" style={{color: 'gray'}}/> 팀 칼리스토가 여러분을 기다립니다. <i className="icon small left gray right quote" style={{color: 'gray'}}/> 
                 </p>
                 <br/>
-                <a href="#opensource" className="ui primary circular big button">팀에 합류하기</a> 
+                <a href="#hello" className="ui primary circular big button">팀에 합류하기</a> 
                 <div/>
             </div>
             </div>
@@ -97,6 +97,37 @@ const Wonderbot = () => {
                 <br/>
                 </div>
                 <br/>
+                <div className="ui container">
+                <div className="ui three stackable cards" style={{width: '100%'}}>
+                {   
+                    career.career.sort((a,b) =>{
+                        if((b.open && a.open)||(!b.open && !a.open)) return 0
+                        else if(b.open) return 1
+                        else return -1 
+                    }).map(o=> {
+                        return (
+                            <a className="ui fluid large card" href={"/team/join/" + o.id} key={o.id}> 
+                                <div className="content">
+                                <br/>
+                                <div className="center aligned header"><a style={{color: o.open ? '#3188ff' : 'gray', fontSize: '1em'}} > [{o.open ? '모집중' : '모집완료'}] {o.name} </a> </div>
+                                <div className="center aligned description">
+                                   {o.description}
+                                <br/>
+                                <br/>
+                                <div className="extra content">
+                                    <div className="ui divider"/>
+                                <div className="center aligned author" style={{color: o.open ? '#3188ff' : 'gray'}}>
+                                {o.open ? '자세히보거나 지원하기' : '자세히보기'}
+                                </div>
+                                </div>
+                                </div>
+                                </div>
+                            </a>
+                        )
+                    })
+                }
+            </div>
+            </div>
            </section>
            
             </div>

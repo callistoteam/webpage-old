@@ -5,9 +5,7 @@ import OnlyMobile from './OnlyMobile'
 import Dropdown from './Dropdown'
 import Body from './Body'
 import Center from './Center'
-import Bump from './Bump'
-import Description from './Description'
-import SlowDescription from './SlowDescription'
+
 
 export default {
     Landing,
@@ -17,7 +15,4 @@ export default {
     Dropdown, 
     Body,
     Center,
-    Bump,
-    Description,
-    SlowDescription
 }
